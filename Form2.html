@@ -230,18 +230,6 @@ footer{
 </div>
 </body>
 <script>
-    $(".z2").animate({width:"45%"},15000)
-    $(".z4").animate({width:"37%"},15000)
-    $(".z6").animate({width:"30%"},15000)
-    $(".z8").animate({width:"35%"},15000)
-    $(".z10").animate({width:"27%"},15000)
-    $(".z12").animate({width:"30%"},15000)
-    $(".x2").animate({width:"20%"},15000)
-    $(".x4").animate({width:"53%"},15000)
-    $(".x6").animate({width:"45%"},15000)
-    $(".x8").animate({width:"40%"},15000)
-    $(".x10").animate({width:"45%"},15000)
-    $(".x12").animate({width:"52%"},15000)
     $("footer").mouseover(function(){
         $("#navBar").animate({bottom:"0px"},800)
     })
@@ -251,7 +239,7 @@ footer{
   //产生高度随机数函数
 function RndNum(){
     var rnd="";
-    rnd+=Math.floor(Math.random()*5);
+    rnd+=Math.floor(Math.random()*10);
     return rnd;
 }
 var f
@@ -263,6 +251,7 @@ function countSecond()
         var addNums = RndNum();
         pNUM = parseInt($(".pNUM").eq(i).html()) + parseInt(addNums);
         $(".pNUM").eq(i).html(pNUM);
+        $(".z2").eq(i).css("width",parseFloat(pNUM/150)*100+"%")
     }
     if(parseInt($(".pNUM").eq(9).html()) >= 100){
         clearTimeout(f)
