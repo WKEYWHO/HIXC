@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HI现场，因你而HI!!!</title>
+    <link type="text/css" rel="stylesheet" href="css/wangye.css">
+    <link type="text/css" rel="stylesheet" href="css/qiandao.css">
+    <link type="text/css" rel="stylesheet" href="css/bottomNav.css">
+    <link type="text/css" rel="stylesheet" href="css/fangkuang.css" />
+    <link type="text/css" rel="stylesheet" href="css/wenzi.css" />
+    <link type="text/css" rel="stylesheet" href="css/tiao.css" />
+    <link type="text/css" rel="stylesheet" href="css/haoma.css" />
+    <link type="text/css" rel="stylesheet" href="css/piaoshu.css" />
+    <link type="text/css" rel="stylesheet" href="css/xiaoxistyle.css" />
+    <link rel="stylesheet" href="css/danmustyle.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/danmu.js"></script>
+    <!-- <script src="js/toupiao.js"></script> -->
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,
+    body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+        background-image: url("img/bg9.jpg");
+        background-size: cover;
+        position: absolute;
+    }
+
+    #container h3 {
+        color: red;
+        font-size: 47px;
+        font-weight: bold;
+        font-family: 黑体;
+        text-align: center;
+    }
+
+    #topleft {
+        /* background-color:blue; */
+        width: 15%;
+        height: 8%;
+        float: left;
+        margin-left: 50px;
+        background-image: url("img/logo2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #topright {
+        /* background-color:blue; */
+        width: 11%;
+        height: 8%;
+        text-align: center;
+        float: right;
+        font-weight: bold;
+        font-size: 25px;
+
+    }
+
+    #main {
+        /* background-color:yellow; */
+        width: 100%;
+        float: left;
+        height: 72%;
+    }
+
+    #left {
+        background-color: green;
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #right {
+        background-color: goldenrod;
+        float: left;
+        width: 70%;
+        height: 100%;
+    }
+
+    #left,
+    #right {
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: gray;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-image: url("img/弹出.png");
+    }
+
+    #toupiaoMain {
+        border: 0px solid blue;
+        width: 1500px;
+        height: 700px;
+        margin-top: 50px;
+        margin-left: 20px;
+        position: absolute;
+        top: 0px;
+        display: none;
+    }
+
+    #bottom {
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0px;
+        background-image: url("img/导航栏背景.png");
+        position: absolute;
+        z-index: 0;
+        bottom: -70px;
+    }
+
+    #buttom1 {
+        background-color: gray;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        z-index: 1;
+        bottom: 69px;
+        right: 0px;
+        background-image: url("img/弹出.png");
+    }
+    footer{
+        width: 100%;
+        height: 70px;
+        background-image: url("img/底部.png");
+        background-color: rgba(117, 117, 117, 0.5);
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <h3>HI现场,现场互动专家</h3>
+        <div id="topleft"></div>
+        <div id="topright">弹幕：1111</div>
+        <!-- 消息 -->
+        <div id="xxcontainer">
+            <div class="evm">二维码</div>
+            <div class="right">
+                <div class="listbox">
+                    <div class="circle"></div>
+                    <div class="text"></div>
+                </div>
+                <div class="listbox">
+                    <div class="circle"></div>
+                    <div class="text"></div>
+                </div>
+                <div class="listbox">
+                    <div class="circle"></div>
+                    <div class="text"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 投票 -->
+        <div id="toupiaoMain">
+            <div class="biankuang">
+                <div class="zhizao">《制造202》英雄人气投票！</div>
+                <div id="q"></div>
+                <div id="w"></div>
+                <div id="e"></div>
+                <div id="r"></div>
+                <div id="t"></div>
+                <div id="y"></div>
+                <div id="u"></div>
+                <div id="i"></div>
+                <div id="o"></div>
+                <div id="p"></div>
+                <div id="qw"></div>
+                <div id="qe"></div>
+                <div class="canyu">人参与&nbsp&nbsp丨&nbsp</div>
+                <div class="paiming">&nbsp排行</div>
+                <div id="z1"></div>
+                <div id="z2"></div>
+                <div id="z3"></div>
+                <div id="z4"></div>
+                <div id="z5"></div>
+                <div id="z6"></div>
+                <div id="z7"></div>
+                <div id="z8"></div>
+                <div id="z9"></div>
+                <div id="z10"></div>
+                <div id="z11"></div>
+                <div id="z12"></div>
+
+
+                <div id="x1"></div>
+                <div id="x2"></div>
+                <div id="x3"></div>
+                <div id="x4"></div>
+                <div id="x5"></div>
+                <div id="x6"></div>
+                <div id="x7"></div>
+                <div id="x8"></div>
+                <div id="x9"></div>
+                <div id="x10"></div>
+                <div id="x11"></div>
+                <div id="x12"></div>
+            </div>
+            <div id="a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="s">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="d">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="f">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="g">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="h">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="j">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="k">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="l">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="as">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="ad">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+            <div id="af">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp票</div>
+
+
+
+            <div id="c1">1号&nbsp&nbsp提莫</div>
+            <div id="c2">2号&nbsp&nbsp德莱文</div>
+            <div id="c3">3号&nbsp&nbsp亚索</div>
+            <div id="c4">4号&nbsp&nbsp金克斯</div>
+            <div id="c5">5号&nbsp&nbsp布隆</div>
+            <div id="c6">6号&nbsp&nbsp凯特琳</div>
+            <div id="c7">7号&nbsp&nbsp娑娜</div>
+            <div id="c8">8号&nbsp&nbspVN</div>
+            <div id="c9">9号&nbsp&nbsp瞎子</div>
+            <div id="c10">10号&nbsp&nbsp伊泽瑞尔</div>
+            <div id="c11">11号&nbsp&nbsp锐雯</div>
+            <div id="c12">12号&nbsp&nbsp盖伦</div>
+
+
+            <div class="tp"><input type="text" id="displayBox" name="displayBox" value="0"></div>
+
+            <div class="tp1"><input type="text" id="displayBox1" name="displayBox" value="0"></div>
+            <div class="tp2"><input type="text" id="displayBox2" name="displayBox" value="0"></div>
+            <div class="tp3"><input type="text" id="displayBox3" name="displayBox" value="0"></div>
+            <div class="tp4"><input type="text" id="displayBox4" name="displayBox" value="0"></div>
+            <div class="tp5"><input type="text" id="displayBox5" name="displayBox" value="0"></div>
+            <div class="tp6"><input type="text" id="displayBox6" name="displayBox" value="0"></div>
+
+            <div class="tp7"><input type="text" id="displayBox7" name="displayBox" value="0"></div>
+            <div class="tp8"><input type="text" id="displayBox8" name="displayBox" value="0"></div>
+            <div class="tp9"><input type="text" id="displayBox9" name="displayBox" value="0"></div>
+            <div class="tp10"><input type="text" id="displayBox10" name="displayBox" value="0"></div>
+            <div class="tp11"><input type="text" id="displayBox11" name="displayBox" value="0"></div>
+            <div class="tp12"><input type="text" id="displayBox12" name="displayBox" value="0"></div>
+        </div>
+        <!-- /投票 -->
+        <footer>
+
+        </footer>
+
+
+        <!-- 导航栏 -->
+        <div id="main">
+            <div id="bigBox">
+                <div id="minBox">
+                    <div id="Box" style="paddding:10px;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="bottom">
+            <div id="buttom1"></div>
+
+            <nav id="navBar">
+                <ul id="nav1">
+
+                    <li class="main">
+                        <ul class="part">
+                            <li class="part1" id="xiaoxi"><img src="img/消息.png" /></li>
+                            <li class="part2">消息</li>
+                        </ul>
+                    </li>
+
+                    <li class="main">
+                        <ul class="part">
+                            <li class="part1" id="toupiao"><img src="img/投票.png" /></li>
+                            <li class="part2">投票</li>
+                        </ul>
+                    </li>
+
+                    <li class="main">
+                        <ul class="part">
+                            <li class="part1" id="qiandao"><img src="img/签到.png" /></li>
+                            <li class="part2">签到</li>
+                        </ul>
+                    </li>
+
+                    <li class="main">
+                        <ul class="part">
+                            <li class="part1" id="danmu"><input type="image" src="img/弹幕关.png" id="sw2" alt=""></li>
+                            <li class="part2">弹幕</li>
+                        </ul>
+                    </li>
+
+                    <li class="back">
+                        <ul class="part">
+                            <li class="part1" id="shengyin"><img src="img/声音.png" /></li>
+                            <li class="part2">声音</li>
+                        </ul>
+                    </li>
+
+                    <li class="main">
+                        <ul class="part">
+                            <li class="part1" id="quanping"><img src="img/全屏.png" /></li>
+                            <li class="part2">全屏</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+</body>
+<script>
+    //投票
+    $("#z2").animate({ width: "49.7px" }, 9000)
+    $("#z4").animate({ width: "53.3px" }, 9000)
+    $("#z6").animate({ width: "43.94px" }, 9000)
+    $("#z8").animate({ width: "37.82px" }, 9000)
+    $("#z10").animate({ width: "22.88px" }, 7000)
+    $("#z12").animate({ width: "27.92px" }, 9000)
+    $("#x2").animate({ width: "31.88px" }, 9000)
+    $("#x4").animate({ width: "22.52px" }, 9000)
+    $("#x6").animate({ width: "41.96px" }, 9500)
+    $("#x8").animate({ width: "37.64px" }, 9000)
+    $("#x10").animate({ width: "25.94px" }, 9000)
+    $("#x12").animate({ width: "24.5px" }, 9000)
+    x = 0
+    z = 0
+    z1 = 0
+    z2 = 0
+    z3 = 0
+    z4 = 0
+    z5 = 0
+    z6 = 0
+    z7 = 0
+    z8 = 0
+    z9 = 0
+    z10 = 0
+    z11 = 0
+    function countSecond() {
+        if (x < 999) {
+            x = x + 66
+            document.getElementById("displayBox").value = x
+            setTimeout("countSecond()", 1000)
+        }
+        if (z < 157) {
+            z = z + 9
+            document.getElementById("displayBox1").value = z
+            setTimeout("countSecond()", 8000)
+        }
+        if (z1 < 175) {
+            z1 = z1 + 13
+            document.getElementById("displayBox2").value = z1
+            setTimeout("countSecond()", 8000)
+        }
+        if (z2 < 133) {
+            z2 = z2 + 9
+            document.getElementById("displayBox3").value = z2
+            setTimeout("countSecond()", 8000)
+        }
+        if (z3 < 60) {
+            z3 = z3 + 8
+            document.getElementById("displayBox4").value = z3
+            setTimeout("countSecond()", 8000)
+        }
+        if (z4 < 40) {
+            z4 = z4 + 7
+            document.getElementById("displayBox5").value = z4
+            setTimeout("countSecond()", 8000)
+        }
+        if (z5 < 40) {
+            z5 = z5 + 6
+            document.getElementById("displayBox6").value = z5
+            setTimeout("countSecond()", 8000)
+        }
+        if (z6 < 56) {
+            z6 = z6 + 7
+            document.getElementById("displayBox7").value = z6
+            setTimeout("countSecond()", 8000)
+        }
+        if (z7 < 20) {
+            z7 = z7 + 3
+            document.getElementById("displayBox8").value = z7
+            setTimeout("countSecond()", 8000)
+        }
+        if (z8 < 120) {
+            z8 = z8 + 3
+            document.getElementById("displayBox9").value = z8
+            setTimeout("countSecond()", 8000)
+        }
+        if (z9 < 90) {
+            z9 = z9 + 6
+            document.getElementById("displayBox10").value = z9
+            setTimeout("countSecond()", 8000)
+        }
+        if (z10 < 50) {
+            z10 = z10 + 7
+            document.getElementById("displayBox11").value = z10
+            setTimeout("countSecond()", 8000)
+        }
+
+        if (z11 < 60) {
+            z11 = z11 + 8
+            document.getElementById("displayBox12").value = z11
+            setTimeout("countSecond()", 8000)
+        }
+    }
+
+    countSecond()
+    //Nav
+    var typeNum = 0;
+    $("#buttom1").click(function () {
+        if (typeNum == 0) {
+            $("#bottom").animate({ bottom: "0px" }, 800)
+            $("#buttom1").css("background-image", "url(img/消失.png)")
+            typeNum = 1
+        } else {
+            $("#bottom").animate({ bottom: "-70px" }, 800)
+            $("#buttom1").css("background-image", "url(img/弹出.png)")
+            typeNum = 0;
+        }
+    })
+
+    $("#qiandao").click(function () {
+        $("#bigBox").show(3000);
+        $("#toupiaoMain").hide(1000);
+        $("#").hide(1000);
+        $("#").hide(1000);
+    });
+    $("#toupiao").click(function () {
+        $("#toupiaoMain").show(3000);
+        $("#bigBox").hide(1000);
+        $("#").hide(1000);
+        $("#").hide(1000);
+    });
+
+    //签到
+    var t
+    setTimeout("changeState()", 2500);
+    var A = 0;
+    function changeState() {
+
+        var txNum = Math.ceil(Math.random() * 21);
+        var arry = ["img/1.gif", "img/2.jpg", "img/3.png", "img/4.jpg", "img/5.jpg", "img/6.jpg", "img/7.png", "img/8.png", "img/9.jpg", "img/10.jpg", "img/11.jpg", "img/12.jpg", "img/13.jpg", "img/14.jpg", "img/15.gif", "img/16.jpg", "img/17.gif", "img/18.jpg", "img/19.jpg", "img/20.jpg", "img/21.jpg", "img/22.jpg"];
+        var arry2 = ["****", "我慌了", "吃瓜吃瓜", "厉害姐", "lei了", "暴躁老哥", "长者", "正义的伙伴", "人生艰难", "？？？？", "你说这谁懂啊！", "尔康生气了！", "黄毛", "管理员", "？？！", "某远东魔术名门", "这戏真棒！", "安啦", "大侦探", "告辞", "把你喂饱的人", "看我脸色"];
+
+        var txD = "<div class='box1'><div class='box2' style='background-image:url(" + arry[txNum] + "' id='a" + A + "'></div><h2 id='b" + A + "' align='center' style='margin:0px;'>" + arry2[txNum] + "</h2></div>";
+        $("#Box").append(txD);
+        $("#a" + A).animate({ "width": "180px", "height": "180px" }, 1500)
+        $("#a" + A).animate({ "width": "130px", "height": "130px" }, 1500)
+        $("#b" + A).animate({ "width": "180px" }, 1000)
+        $("#b" + A).animate({ "width": "150px" }, 1000)
+        /*txNum++*/
+        A++
+
+        t = setTimeout("changeState()", 2500);
+    }
+
+
+</script>
+
+</html>

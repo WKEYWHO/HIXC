@@ -1,0 +1,243 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#z1{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:40px;
+}
+#z2{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:42px;
+}
+
+
+#z3{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:270px;
+}
+#z4{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:272px;
+}
+
+
+#z5{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:500px;
+}
+#z6{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:502px;
+}
+
+
+#z7{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:730px;
+}
+#z8{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:732px;
+}
+
+
+#z9{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:960px;
+}
+#z10{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:962px;
+}
+
+
+#z11{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:270px;
+            left:1190px;
+}
+#z12{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:272px;
+            left:1192px;
+}
+
+
+#x1{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:40px;
+}
+#x2{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:42px;
+}
+
+
+#x3{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:270px;
+}
+#x4{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:272px;
+}
+
+
+#x5{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:500px;
+}
+#x6{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:502px;
+}
+
+
+#x7{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:730px;
+}
+#x8{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:732px;
+}
+
+
+#x9{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:960px;
+}
+#x10{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:962px;
+}
+
+
+#x11{
+    width: 180px;
+    height: 10px;
+    border:2px solid white;
+    background-color: white;
+    position:absolute;
+            top:510px;
+            left:1190px;
+}
+#x12{
+    width: 0px;
+    height: 6px;
+    border:2px solid blue;
+    background-color: blue;
+    position:absolute;
+            top:512px;
+            left:1192px;
+}
