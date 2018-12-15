@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/wangye.css">
+    <link type="text/css" rel="stylesheet" href="css/qiandao.css">
+    <link type="text/css" rel="stylesheet" href="css/bottomNav.css">
+    <link type="text/css" rel="stylesheet" href="css/fangkuang.css"/>
+    <link type="text/css" rel="stylesheet" href="css/wenzi.css"/>
+    <link type="text/css" rel="stylesheet" href="css/tiao.css"/>
+    <link type="text/css" rel="stylesheet" href="css/haoma.css"/>
+    <link type="text/css" rel="stylesheet" href="css/piaoshu.css"/>
+    <script src="js/jquery.js"></script>
+</head>
+<style> 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow: hidden;
+width: 100%;
+height: 100%;
+background-color:lightgray;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    background-image: url("img/bg9.jpg");
+    background-size: cover;
+}
+#container h3{
+    color: red;
+    font-size: 47px;
+    font-weight: bold;
+    font-family: 黑体;
+    text-align: center;
+}
+#topleft{
+    /* background-color:blue; */
+    width: 15%;
+    height: 8%;
+    float: left;
+margin-left: 50px;
+background-image: url("img/logo2.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+#topright{
+    /* background-color:blue; */
+    width: 11%;
+    height: 8%;
+    text-align: center;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+#main{
+    /* background-color:yellow; */
+    width: 100%;
+    float: left;
+    height: 72%;
+    }
+#left{
+    background-color:green;
+    float: left;
+    width: 30%;
+    height:100%;
+}
+#right{
+    background-color:goldenrod;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+#left,#right{
+    margin: 0 auto;
+}
+footer{
+    background-color:gray;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("img/弹出.png");
+}
+#toupiaoMain{
+    border: 0px solid blue;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    /* left: 22px; */
+    top: 10%;
+    margin: 0 auto;
+}
+</style>
+<body>
+<header>
+    <h3>HI现场,现场互动专家</h3>
+    <div id="topleft"></div>
+    <div id="topright">弹幕：1111</div>
+</header>
+<div id="container">
+    <!-- 投票 -->
+    <div id="toupiaoMain">
+        <div class ="biankuang">
+            <div class="zhizao">《制造202》英雄人气投票！</div>
+            <div class="dakuang">
+                <div class="q"></div>
+                <div class="z1">
+                    <div class="z2"></div>
+                </div>
+                <div style="width:100%">
+                    <span class="c1" style="text-align: left;width:50%;display: inline-block;">1号&nbsp&nbsp提莫</span> 
+                    <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                        <span class="pNUM">0</span>票
+                    </div>
+                </div>
+            </div>
+            <div class="dakuang1">
+                    <div class="w"></div>
+                    <div class="z3">
+                        <div class="z4"></div>
+                    </div>
+                    <div style="width:100%">
+                        <span class="c1" style="text-align: left;width:50%;display: inline-block;">2号&nbsp&nbsp德莱文</span> 
+                        <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                            <span class="pNUM">0</span>票
+                        </div>
+                    </div>
+                </div>
+                <div class="dakuang2">
+                        <div class="e"></div>
+                        <div class="z5">
+                            <div class="z6"></div>
+                        </div>
+                        <div style="width:100%">
+                            <span class="c1" style="text-align: left;width:50%;display: inline-block;">3号&nbsp&nbsp亚索</span> 
+                            <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                <span class="pNUM">0</span>票
+                            </div>
+                        </div>
+                    </div>
+                <div class="dakuang3">
+                        <div class="r"></div>
+                        <div class="z7">
+                            <div class="z8"></div>
+                        </div>
+                        <div style="width:100%">
+                            <span class="c1" style="text-align: left;width:50%;display: inline-block;">4号&nbsp&nbsp金克斯</span> 
+                            <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                <span class="pNUM">0</span>票
+                            </div>
+                        </div>
+                    </div>
+                <div class="dakuang4">
+                        <div class="t"></div>
+                        <div class="z9">
+                            <div class="z10"></div>
+                        </div>
+                        <div style="width:100%">
+                        <span class="c1" style="text-align: left;width:50%;display: inline-block;">5号&nbsp&nbsp布隆</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                <span class="pNUM">0</span>票
+                            </div>
+                        </div>
+                </div>
+            <div class="dakuang5">
+                    <div class="y"></div>
+                        <div class="z11">
+                            <div class="z12"></div>
+                        </div>
+                        <div style="width:100%">
+                        <span class="c1" style="text-align: left;width:50%;display: inline-block;">6号&nbsp&nbsp凯特琳</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                <span class="pNUM">0</span>票
+                            </div>
+                        </div>
+                </div>
+            <div class="dakuang6">
+                    <div class="u"></div>
+                        <div class="x1">
+                            <div class="x2"></div>
+                        </div>
+                        <div style="width:100%">
+                        <span class="c1" style="text-align: left;width:50%;display: inline-block;">7号&nbsp&nbsp娑娜</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                <span class="pNUM">0</span>票
+                            </div>
+                        </div>
+                </div>
+            <div class="dakuang7">
+                        <div class="i"></div>
+                            <div class="x3">
+                                <div class="x4"></div>
+                            </div>
+                            <div style="width:100%">
+                            <span class="c1" style="text-align: left;width:50%;display: inline-block;">8号&nbsp&nbspVN</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                    <span class="pNUM">0</span>票
+                                </div>
+                            </div>
+                    </div>
+                    <div class="dakuang8">
+                            <div class="o"></div>
+                                <div class="x5">
+                                    <div class="x6"></div>
+                                </div>
+                                <div style="width:100%">
+                                <span class="c1" style="text-align: left;width:50%;display: inline-block;">9号&nbsp&nbsp李青</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                        <span class="pNUM">0</span>票
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="dakuang9">
+                                <div class="p"></div>
+                                    <div class="x7">
+                                        <div class="x8"></div>
+                                    </div>
+                                    <div style="width:100%">
+                                    <span class="c1" style="text-align: left;width:50%;display: inline-block;">10号&nbsp&nbsp伊泽瑞尔</span>                                 <div class="c2" style="text-align: right;width:44%;display: inline-block;">
+                                            <span class="pNUM">0</span>票
+                                        </div>
+                                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(".z2").animate({width:"45%"},15000)
+    $(".z4").animate({width:"37%"},15000)
+    $(".z6").animate({width:"30%"},15000)
+    $(".z8").animate({width:"35%"},15000)
+    $(".z10").animate({width:"27%"},15000)
+    $(".z12").animate({width:"30%"},15000)
+    $(".x2").animate({width:"20%"},15000)
+    $(".x4").animate({width:"53%"},15000)
+    $(".x6").animate({width:"45%"},15000)
+    $(".x8").animate({width:"40%"},15000)
+    $(".x10").animate({width:"45%"},15000)
+    $(".x12").animate({width:"52%"},15000)
+    $("footer").mouseover(function(){
+        $("#navBar").animate({bottom:"0px"},800)
+    })
+    $("footer").mouseover(function(){
+        $("footer").animate({bottom:"73px"},800)
+    })
+  //产生高度随机数函数
+function RndNum(){
+    var rnd="";
+    rnd+=Math.floor(Math.random()*5);
+    return rnd;
+}
+var f
+var pNUM = 0;
+var numsH = 0;
+function countSecond() 
+{　
+    for(var i = 0;i<$(".pNUM").length;i++){
+        var addNums = RndNum();
+        pNUM = parseInt($(".pNUM").eq(i).html()) + parseInt(addNums);
+        $(".pNUM").eq(i).html(pNUM);
+    }
+    if(parseInt($(".pNUM").eq(9).html()) >= 100){
+        clearTimeout(f)
+    }else{
+        f=setTimeout("countSecond()",400)
+    }
+}
+countSecond()
+
+
+    </script>
+</html>
