@@ -26,14 +26,12 @@ function countSecond()
         f=setTimeout("countSecond()",400)
     }
 }
-countSecond()
 
 
 //投票方法
 
     //签到
     var t
-    setTimeout("changeState()", 2500);
     var A = 0;
     function changeState() {
 
@@ -90,11 +88,13 @@ $("#qiandao").click(function () {
     $("#bigBox").show(3000);
     $("#toupiaoMain").hide(1000);
     $("#xxcontainer").hide(1000);
+    changeState();
 });
 $("#toupiao").click(function () {
     $("#toupiaoMain").show(3000);
     $("#bigBox").hide(1000);
     $("#xxcontainer").hide(1000);
+    countSecond();
 });
 $("#xiaoxi").click(function () {
     $("#xxcontainer").show(3000);
