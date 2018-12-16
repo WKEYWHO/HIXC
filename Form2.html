@@ -236,31 +236,5 @@ footer{
     $("footer").mouseover(function(){
         $("footer").animate({bottom:"73px"},800)
     })
-  //产生高度随机数函数
-function RndNum(){
-    var rnd="";
-    rnd+=Math.floor(Math.random()*10);
-    return rnd;
-}
-var f
-var pNUM = 0;
-var numsH = 0;
-function countSecond() 
-{　
-    for(var i = 0;i<$(".pNUM").length;i++){
-        var addNums = RndNum();
-        pNUM = parseInt($(".pNUM").eq(i).html()) + parseInt(addNums);
-        $(".pNUM").eq(i).html(pNUM);
-        $(".z2").eq(i).css("width",parseFloat(pNUM/150)*100+"%")
-    }
-    if(parseInt($(".pNUM").eq(9).html()) >= 100){
-        clearTimeout(f)
-    }else{
-        f=setTimeout("countSecond()",400)
-    }
-}
-countSecond()
-
-
     </script>
 </html>

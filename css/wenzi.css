@@ -2,7 +2,9 @@
     color:white;
     font-family: "黑体";
     font-size:40px;
-
+    position:absolute;
+    top:25px;
+    left:35px;
 }
 .HI{
 
@@ -10,7 +12,9 @@
     font-family: "微软雅黑";
     font-size:200%;
     font-weight:bold;
-
+    position:absolute;
+    left:600px;
+    top:20px;
     width:50%;
 }
 .canyu{
@@ -18,7 +22,9 @@
     font-family: "微软雅黑";
     font-size:30px;
     font-weight:bold;
-
+    position:absolute;
+    left:1150px;
+    top:25px;
 }
 .paiming{
     color:white;
@@ -28,91 +34,117 @@
     border: 3px solid lightgoldenrodyellow;
     width: 80px;
     height: 40px;
-
+    position:absolute;
+    left:1300px;
+    top:25px;
 }
-.a{
+#a{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-    display: inline-block;
-    width: 50%;
+    position:absolute;
+    top:320px;
+    left:155px;
+     
     }
-.s{
+#s{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:320px;
+    left:390px; 
   
     }
-.d{
+#d{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:320px;
+    left:625px; 
     width:10%;    
     }
-.f{
+#f{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
- 
+    position:absolute;
+    top:320px;
+    left:850px;   
     width:10%;  
-   }
-.g{
+    }
+#g{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:320px;
+    left:1080px; 
     width:10%;    
     }
-.h{
+#h{
    
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:320px;
+    left:1315px; 
     width:10%;    
     }
-.j{
+#j{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:155px; 
     width:50%;    
     }
-.k{
+#k{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:390px; 
     width:50%;    
     }
-.l{
+#l{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:625px; 
     width:10%;    
     }
-.as{
+#as{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:850px;  
     width:10%;   
     }
-.ad{
+#ad{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:1080px;  
     width:10%;   
     }
-.af{
+#af{
     color:white;
     font-family: "微软雅黑";
     font-size:20px;
-
+    position:absolute;
+    top:560px;
+    left:1315px; 
     width:10%;    
     }
     #jishiqi{
