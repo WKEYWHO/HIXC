@@ -39,7 +39,7 @@ function timedCount2() {
             $(".dmBox").eq(i).remove();
         }
     }
-    t = setTimeout("timedCount2()", 800)
+    t = setTimeout("timedCount2()", 500)
 }
 //弹幕的出现与隐藏
 
