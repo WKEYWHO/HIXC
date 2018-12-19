@@ -51,7 +51,52 @@ function countSecond()
         t = setTimeout("changeState()", 2500);
     }
 
+//全屏功能
+document.getElementById("FullSurt").onclick = function() {
+    var dateS = $("#FullSurt").attr("date");
+   if(dateS == 0){
+       requestFullScreen(document.documentElement); // 整个网页
+       $("#FullSurt").attr("date",1);
+   }else{
+        exitFull();
+        $("#FullSurt").attr("date",0);
+   }
+    
+};
 
+function requestFullScreen(element) {
+        // 判断各种浏览器，找到正确的方法
+        var requestMethod = element.requestFullScreen || //W3C
+            element.webkitRequestFullScreen || //FireFox
+            element.mozRequestFullScreen || //Chrome等
+            element.msRequestFullScreen; //IE11
+        if (requestMethod) {
+            requestMethod.call(element);
+        } else if (typeof window.ActiveXObject !== "undefined") { //for Internet Explorer
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript !== null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+    //退出全屏 判断浏览器种类
+
+function exitFull() {
+    // 判断各种浏览器，找到正确的方法
+    var exitMethod = document.exitFullscreen || //W3C
+        document.mozCancelFullScreen || //FireFox
+        document.webkitExitFullscreen || //Chrome等
+        document.webkitExitFullscreen; //IE11
+    if (exitMethod) {
+        exitMethod.call(document);
+    } else if (typeof window.ActiveXObject !== "undefined") { //for Internet Explorer
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+
+}
 
 
 //功能菜单控制
