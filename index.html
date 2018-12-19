@@ -149,6 +149,9 @@
 </style>
  </head>  
  <body> 
+    <audio style="display:none" id="music1" loop autoplay="autoplay" controls id="bgMusic" src="music/1.mp3">  
+
+    </audio>  
   <div id="container"> 
    <h3>HI现场,现场互动专家</h3> 
    <div id="topleft"></div> 
@@ -329,16 +332,18 @@
         <li class="part1" id="danmu"><input type="image" src="img/弹幕关.png" id="sw2" alt="" /></li> 
         <li class="part2">弹幕</li> 
        </ul> </li> 
-      <li class="back"> 
+      <li class="back" id="musicBt" onclick="bf()"> 
        <ul class="part"> 
         <li class="part1" id="shengyin"><input type="image" src="img/声音关.png" id="music" alt="" /></li> 
         <li class="part2">声音</li> 
-       </ul> </li> 
+       </ul> 
+    </li> 
       <li class="main"> 
        <ul class="part" id="FullSurt" date="0"> 
         <li class="part1" id="quanping"><img src="img/全屏.png" /></li> 
         <li class="part2">全屏</li> 
-       </ul> </li> 
+       </ul> 
+    </li> 
      </ul> 
     </nav> 
    </div>  

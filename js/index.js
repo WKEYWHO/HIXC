@@ -49,8 +49,21 @@ function countSecond()
         A++
 
         t = setTimeout("changeState()", 2500);
-    }
-
+    }  
+//音乐控制
+function bf(){
+    var audio = document.getElementById('music1'); 
+    if(audio!==null){             
+       //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+        console.log(audio.paused);
+     if(audio.paused){
+        audio.currentTime = 0;                                      
+         audio.play();//audio.play();// 这个就是播放  
+     }else{
+      audio.pause();// 这个就是暂停
+     }
+    } 
+}
 //全屏功能
 document.getElementById("FullSurt").onclick = function() {
     var dateS = $("#FullSurt").attr("date");
