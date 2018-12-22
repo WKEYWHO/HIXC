@@ -116,11 +116,11 @@ function exitFull() {
 
 $("#buttom1").click(function () {
     if (typeNum == 0) {
-        $("#bottom").animate({ bottom: "5px" }, 800)
+        $("#bottom").animate({ bottom: "0px" }, 800)
         $("#buttom1").css("background-image", "url(img/消失.png)")
         typeNum = 1
     } else {
-        $("#bottom").animate({ bottom: "-65px" }, 800)
+        $("#bottom").animate({ bottom: "-70px" }, 800)
         $("#buttom1").css("background-image", "url(img/弹出.png)")
         typeNum = 0;
     }
