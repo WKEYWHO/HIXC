@@ -132,10 +132,10 @@ window.onload = function () {
     var onmusic = true;
     music.onclick = function () {
         if (onmusic) {
-            music.src = 'img/声音.png';
+            music.src = 'img/声音关.png';
             onmusic = false;
         } else {
-            music.src = 'img/声音关.png';
+            music.src = 'img/声音.png';
             onmusic = true;
         }
     }
